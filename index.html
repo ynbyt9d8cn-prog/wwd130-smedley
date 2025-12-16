@@ -1,68 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>NecrOns | Home</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A beginner's hobby journal documenting a Portal-themed Necron Combat Patrol for Warhammer 40,000.">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NecrOns | Portal-Themed Necron Hobby Journal</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    
-</head>
-<body>
-  <header>
-    <div class="logo-box">
-      <h1>NecrOns</h1>
-      <p>Portal-Themed Necron Hobby Journal</p>
-    </div>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="assembly.html">Assembly</a>
-      <a href="painting.html">Painting</a>
-    </nav>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="topbar">
+      <a class="brand" href="index.html">
+        <img id="logo" src="images/logo.png" alt="NecrOns Logo">
+        <span class="brand-name">NecrOns</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="assembly.html">Assembling</a>
+        <a href="painting.html">Painting</a>
+        <a href="#">Resources</a>
+      </nav>
+
+      <a class="btn join" href="#">Join</a>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h2>Welcome to NecrOns!</h2>
+
+    <section class="hero">
+      <img class="hero-logo" src="images/logo.png" alt="NecrOns Logo">
+      <h1 class="hero-title">NecrOns</h1>
+      <p class="hero-subtitle">Portal-themed Necron Combat Patrol hobby journal</p>
+    </section>
+
+    <section class="intro">
+      <h2>Necron Combat Patrol Meets Portal Aesthetic</h2>
       <p>
-        This is my journey in painting a Portal-themed Warhammer 40k Necron Scarab miniature.
-        Completing this project requires both assembly and painting of the miniature.
-      </p>
-      <p>
-        This site is a beginner's hobby journal for anyone curious about Warhammer 40,000,
-        Portal, or miniature painting and wants to see what getting into the hobby might look like.
+        This site documents the assembly and painting process of a Portal-themed
+        Necron Combat Patrol. Whether you are new to Warhammer or looking for
+        inspiration, this journal breaks down the process step by step.
       </p>
     </section>
 
-    <section>
-      <h2>The Project at a Glance</h2>
-      <p>
-        I will be documenting a Portal-themed Necron Combat Patrol from start to finish:
-        from cutting pieces off the sprue, to gluing them together, to applying base coats,
-        accents, and final highlights.
-      </p>
-      <ul>
-        <li><strong>Assembly:</strong> Learn about the tools and steps used to prepare and assemble the model.</li>
-        <li><strong>Painting:</strong> Follow the painting process step-by-step from base coat to final details.</li>
-      </ul>
+    <section class="feature-image">
+      <img src="images/placeholder.jpg" alt="Featured Necron model">
     </section>
 
-    <section>
-      <h2>Where to Start</h2>
-      <p>
-        New to miniatures or Warhammer 40,000? Start with the
-        <a href="assembly.html">Assembly</a> page to see how the model is put together.
-        When you're ready for color, move on to the <a href="painting.html">Painting</a> page.
-      </p>
+    <!-- Two linked cards with background images + hover grow -->
+    <section class="feature-links">
+      <a class="feature-link" href="assembly.html" style="--bg:url('images/assembly.jpg');">
+        <div class="feature-overlay">
+          <h2>Model Assembly</h2>
+          <p>Learn how the Necron models are assembled, prepared, and cleaned before painting begins.</p>
+        </div>
+      </a>
+
+      <a class="feature-link" href="painting.html" style="--bg:url('images/painting.jpg');">
+        <div class="feature-overlay">
+          <h2>Painting Process</h2>
+          <p>Follow the steps used to achieve the Portal-inspired Necron aesthetic.</p>
+        </div>
+      </a>
     </section>
+
   </main>
 
-  <footer>
-    <p>&copy; 2025 NecrOns</p>
-  </footer>
+  <footer class="site-footer">
+
+  <div class="footer-brand">
+    <img src="images/logo.png" alt="NecrOns Logo" class="footer-logo">
+  </div>
+
+  <nav class="footer-nav">
+    <a href="index.html">Home</a>
+    <a href="painting.html">Painting Process</a>
+    <a href="assembly.html">Model Assembly</a>
+  </nav>
+
+  <hr class="footer-divider">
+
+  <p class="footer-copy">
+    &copy; 2025 NecrOns Painting Journal. All rights reserved.
+  </p>
+
+</footer>
+
+
+
 </body>
 </html>
