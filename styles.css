@@ -1,1 +1,162 @@
+:root {
+  --primary: #000000;
+  --secondary: #ffffff;
+  --accent1: #ff9a00;
+  --accent2: #00a2ff;
+  --muted: #848484;
 
+  --heading-font: "Roboto Mono", monospace;
+  --body-font: "Space Mono", monospace;
+
+  --radius: 12px;
+  --max: 1000px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  line-height: 1.6;
+  background: var(--secondary);
+  color: var(--primary);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+header {
+  width: min(var(--max), 92%);
+  margin: 0 auto;
+  padding: 1.25rem 0 0.75rem;
+  border-bottom: 4px solid var(--primary);
+}
+
+#title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#logo {
+  width: 56px;
+  height: auto;
+}
+
+h1, h2, h3 {
+  font-family: var(--heading-font);
+  line-height: 1.2;
+  margin: 0 0 0.75rem;
+}
+
+header h1 {
+  font-size: clamp(1.7rem, 2.6vw, 2.5rem);
+  letter-spacing: 0.5px;
+}
+
+main,
+footer {
+  width: min(var(--max), 92%);
+  margin: 0 auto;
+}
+
+main {
+  padding: 1.5rem 0 2rem;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+section {
+  background: var(--secondary);
+  border: 2px solid var(--primary);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  margin: 1.25rem 0;
+}
+
+nav {
+  margin: 1rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+nav a {
+  font-family: var(--heading-font);
+  text-decoration: none;
+  color: var(--primary);
+  background: var(--secondary);
+  border: 2px solid var(--primary);
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  transition: transform 0.08s ease-in-out, background 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+nav a:hover {
+  background: var(--accent2);
+  color: var(--secondary);
+  transform: translateY(-1px);
+}
+
+nav a:focus-visible {
+  outline: 3px solid var(--accent1);
+  outline-offset: 3px;
+}
+
+nav a.active {
+  background: var(--accent1);
+  color: var(--primary);
+}
+
+a {
+  color: var(--accent2);
+}
+
+a:hover {
+  color: var(--accent1);
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 780px) {
+  .two-col {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card {
+  background: var(--secondary);
+  border: 2px solid var(--primary);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid var(--primary);
+  margin: 1.5rem 0;
+}
+
+footer {
+  padding: 1.25rem 0 2rem;
+  border-top: 4px solid var(--primary);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+footer a {
+  color: var(--accent2);
+}
